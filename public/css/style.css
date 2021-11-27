@@ -1,0 +1,254 @@
+@import url(global.css);
+
+/* Start Carousel section */
+.carousel-item {
+  width: 100vw;
+  height: 80vh;
+}
+
+.carouselImage {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.carousel-item > img {
+  width: 100%;
+}
+/* End Carousel section */
+
+/* -------  START SERVICES------- */
+
+.service-img {
+  /* margin-top: 100px; */
+  margin-bottom: 100px;
+  max-width: 100%;
+  z-index: 1;
+  border-radius: 6px;
+  background-position: center center;
+  background-size: cover;
+  box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.15);
+}
+
+/* 
+.mr-30{
+    margin-right: 30px;
+} */
+
+.icon-size {
+  font-size: 55px;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 45px;
+  flex: 0 0 45px;
+  max-width: 55px;
+  width: 55px;
+  margin-right: 40px;
+}
+
+.services .section-heading {
+  margin: 100px 0;
+}
+
+.services .service-area .service-content {
+  margin-bottom: 50px;
+}
+
+.services .service-area .service-content h5 {
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+/* -------  END SERVICES------- */
+
+/* Buttons */
+
+.button {
+  padding: 0.8rem 2.2rem;
+  font: normal 500 16px/20px var(--roboto);
+  position: relative;
+  border: 3px solid transparent;
+  border-radius: 4px;
+}
+
+.button.primary-button {
+  background: var(--gradient-color);
+  background-clip: padding-box;
+  color: whitesmoke;
+  transition: background 0.6s ease;
+  box-shadow: var(--box-shadow);
+}
+
+.button.primary-button:hover {
+  background: whitesmoke;
+  background-clip: padding-box;
+  color: black;
+}
+
+.button.primary-button::after,
+.button.secondary-button::after {
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  bottom: -2px;
+  right: -2px;
+  background: var(--gradient-color);
+  content: " ";
+  z-index: -1;
+  border-radius: 4px;
+}
+
+.button.secondary-button {
+  background: white;
+  background-clip: padding-box;
+  transition: background 0.6s ease;
+}
+
+.button.secondary-button:hover {
+  background: var(--gradient-color);
+  color: whitesmoke;
+  box-shadow: var(--box-shadow);
+}
+
+p.para {
+  color: var(--text-color);
+  font: normal 500 16px/ 25px var(--roboto);
+}
+
+.font-roboto {
+  font-family: var(--roboto);
+}
+
+button:focus,
+button:active button:hover .btn:active,
+.btn.active {
+  outline: 0px !important;
+  box-shadow: none !important;
+}
+
+/* Project Area */
+
+.project-area {
+  padding: 4rem 0;
+}
+
+.project-area .button-group button {
+  /* color: ; */
+  background: transparent;
+  border: none;
+  font: normal 500 16px/130px;
+  text-transform: uppercase;
+}
+
+.project-area .button-group button + button {
+  padding-left: 3rem;
+}
+
+.project-area .grid .our-project > .title h4 {
+  font: normal 700 25px/12px;
+}
+
+.project-area .grid .our-project .img a:hover img {
+  filter: brightness(1.1) drop-shadow(1px 8px 30px #b1afaf);
+}
+
+/* End Project Area */
+
+/* START GET IN TOUCH SECTION  */
+
+/* :: 23.0 Contact Area CSS */
+
+.get-in-touch-btn {
+  -webkit-transition-duration: 400ms;
+  transition-duration: 400ms;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  min-width: 150px;
+  height: 46px;
+  color: #ffffff;
+  background-color: #70c745;
+  border: 2px solid #70c745;
+  border-radius: 2px;
+  padding: 0 20px;
+  font-size: 16px;
+  line-height: 42px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.contact-area {
+  margin-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 100px;
+}
+
+.map-area {
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.15);
+}
+
+.map-area iframe {
+  width: 100%;
+  height: 400px;
+  border: none;
+  margin-bottom: 0;
+  border-radius: 5px;
+}
+
+/* 
+.map-area iframe @media #{$breakpoint-xs} {
+    height: 320px;
+} */
+
+.contact-form-area .form-control {
+  position: relative;
+  z-index: 2;
+  height: 45px;
+  width: 100%;
+  background-color: #ffffff;
+  font-size: 16px;
+  margin-bottom: 15px;
+  border: 1px solid #e1e1e1;
+  border-radius: 2px;
+  padding: 15px 20px;
+  font-weight: 400;
+  color: #b7b7b7;
+}
+
+/* 
+.contact-form-area .form-control @include trans-duration(500ms);
+&:focus {
+    box-shadow: none;
+    border-color: $hover-color;
+} */
+
+.contact-form-area textarea.form-control {
+  height: 80px;
+}
+
+.contact-information p {
+  line-height: 1.3;
+  color: #707070;
+  margin-bottom: 13px;
+}
+
+.contact-information p span {
+  color: #303030;
+}
+
+.contact-information :last-child {
+  margin-bottom: 0;
+}
+
+.contact--thumbnail {
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.15);
+}
+
+/* 
+.contact--thumbnail @media (0px) {
+    margin-bottom: 100px;
+} */
+
+/* END GET IN TOUCH SECTION  */
